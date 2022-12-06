@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+</head>
+<body>
+    <table>
+        {% for personne in personnes_list %}
+        <tr>
+            <td>{{ personne.name }}</td>
+            <td>{{ personne.first_name }}</td>
+            <td>{{ personne.date_of_birth }}</td>
+        </tr>
+        {% empty %}
+        <td>Empty</td>
+        <td>Empty</td>
+        <td>Empty</td>
+        {% endfor %}
+    </table>
+</body>
+</html>
